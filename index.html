@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="card"></div>
+
+    <script type="text/babel">
+        const divElement=(
+            <div>
+                <h1>Mobile Operating System</h1>
+                <ul>
+                    <li>Android</li>
+                    <li>Blackberry</li>
+                    <li>iPhone</li>
+                    <li>Windows Phone</li></ul>
+                    <h1>Mobile Mnufactures</h1>
+                    <ul>
+                        <li>Samsung</li>
+                        <li>Micromax</li>
+                        <li>HTC</li>
+                        <li>Apple</li></ul></div>
+        );
+
+        const container=document.getElementById("card");
+        const root=ReactDOM.createRoot(container);
+        root.render(divElement)
+
+    </script>
+</body>
+</html>
